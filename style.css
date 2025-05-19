@@ -1,0 +1,53 @@
+style.css
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the sections */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Section styles */
+.section {
+  position: relative;
+  flex: 1;
+  min-width: 30%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+/* Title positioning */
+.title {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #333;
+  color: white;
+  padding: 5px;
+}
+
+/* Content styling */
+.content {
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .section {
+    min-width: 48%;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    min-width: 100%;
+  }
+}
